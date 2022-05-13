@@ -31,6 +31,7 @@ const client = new MongoClient(uri, {
   useUnifiedTopology: true,
   serverApi: ServerApiVersion.v1,
 });
+console.log(uri)
 //adding items
 async function run() {
   try {
