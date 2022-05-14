@@ -25,7 +25,7 @@ function verifyJWT(req, res, next) {
   });
 }
 
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PAS}@cluster0.pu0vd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority;`;
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PAS}@cluster0.pu0vd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
